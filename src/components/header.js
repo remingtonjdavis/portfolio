@@ -11,9 +11,12 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        display: `flex`,
+        'flex-direction': `column`,
+        'flex-wrap': 'wrap',
+        height: '80px',
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0 1.0875rem`,
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -24,9 +27,14 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
         </Link>
       </h1>
+          <img src="http://remingtonjdavis.com/logo.png" alt="logo" height="40px" width="100px"/>
+      <div style={{display: 'flex', alignSelf: 'flex-end', height: '80px', lineHeight:'80px', flexDirection:'row'}}>
+      <div >About</div>
+      <div >Projects</div>
+      <div >Social</div>
+      </div>
     </div>
   </header>
 )
